@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect width="36" height="36" rx="9" fill="#181717"/>
+  <!-- three nodes of a repository graph -->
+  <circle cx="12" cy="10.5" r="3" fill="#ffffff"/>
+  <circle cx="12" cy="25.5" r="3" fill="#ffffff"/>
+  <circle cx="24.5" cy="18" r="3" fill="#3fb950"/>
+  <!-- branch lines -->
+  <path d="M12 13.5v9" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M12 18h5.4a4 4 0 0 0 4-4v-1" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- connection outward -->
+  <path d="M27.5 18h3" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round"/>
+</svg>
