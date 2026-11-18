@@ -1,0 +1,35 @@
+# dsh bundle patch: mounts the official remote GitHub MCP Server through the
+# built-in @deepseek-ai/dsh-mcp-client plugin. The server name "github" makes
+# every tool appear as mcp__github__<tool> in the harness.
+#
+# The PAT never lives in this file. With expandTemplates enabled, the
+# Authorization header resolves ${credential:GITHUB_MCP_PAT} at runtime from the
+# DSH credential store (the local credentials provider also reads the harness's
+# inherited environment), and every resolved value is redacted from diagnostics.
+# Save it under Settings > Credentials, or export GITHUB_MCP_PAT before launch.
+#
+# failOnStartupError stays false so a not-yet-saved credential leaves the entry
+# in "waiting-credentials" instead of rejecting activation: saving the credential
+# later retries resolution and connects without restarting the harness.
+#
+# Toolsets: only the `repos` toolset is needed for creating repositories,
+# uploading content, and deleting files or whole repositories.
+- insert:
+    - id: github-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: github
+        transport: streamable-http
+        url: https://api.githubcopilot.com/mcp/
+        expandTemplates: true
+        headers:
+          Authorization: 'Bearer ${credential:GITHUB_MCP_PAT}'
+          X-MCP-Toolsets: repos
+        failOnStartupError: false
+        startupTimeoutMs: 30000
+        toolCallTimeoutMs: 60000
+        reconnect:
+          enabled: true
+          initialDelayMs: 500
+          maxDelayMs: 30000
+          maxAttempts: 10
