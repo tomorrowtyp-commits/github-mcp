@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "GitHub",
+    "description": "通过 GitHub 官方远程 MCP Server 连接你的 GitHub 账户，可在对话中新建公开或私密仓库、上传与删除仓库内容。工具以 mcp__github__<tool> 形式提供，支持任意具备工具调用能力的模型。需要将细粒度 PAT 保存为 GITHUB_MCP_PAT 凭据（Contents: Read and write、Metadata: Read；删除整个仓库还需 Administration: Read and write）。删除文件或仓库不可逆，执行前请逐次确认。",
+    "detail": "docs/DETAIL.md"
+  }
+}
