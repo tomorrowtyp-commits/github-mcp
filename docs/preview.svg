@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+  <rect width="640" height="300" rx="20" fill="#f3f5f9"/>
+  <!-- agent / conversation side -->
+  <rect x="48" y="72" width="184" height="156" rx="20" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
+  <path d="M80 104h108a10 10 0 0 1 10 10v24a10 10 0 0 1-10 10h-76l-16 12v-12H80a10 10 0 0 1-10-10v-24a10 10 0 0 1 10-10Z" fill="#e4edf8"/>
+  <path d="M108 170h80a10 10 0 0 1 10 10v20a10 10 0 0 1-10 10h-80a10 10 0 0 1-10-10v-20a10 10 0 0 1 10-10Z" fill="#247bbf"/>
+  <!-- request arrow -->
+  <path d="M264 126h108m-10-10 10 10-10 10" fill="none" stroke="#247bbf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- response arrow -->
+  <path d="M372 178H264m10-10-10 10 10 10" fill="none" stroke="#7b8b9f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- remote repository side -->
+  <rect x="408" y="72" width="184" height="156" rx="20" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
+  <rect x="434" y="98" width="132" height="40" rx="8" fill="#e4edf8"/>
+  <path d="M446 118h108" fill="none" stroke="#9cacc0" stroke-width="3" stroke-linecap="round"/>
+  <rect x="446" y="110" width="16" height="16" rx="4" fill="#247bbf"/>
+  <rect x="434" y="152" width="132" height="20" rx="6" fill="#eef2f7"/>
+  <rect x="434" y="182" width="132" height="20" rx="6" fill="#eef2f7"/>
+  <g fill="#247bbf">
+    <circle cx="446" cy="162" r="4"/>
+    <circle cx="446" cy="192" r="4"/>
+  </g>
+  <path d="M460 162h92m-92 30h92" fill="none" stroke="#9cacc0" stroke-width="3" stroke-linecap="round"/>
+</svg>
