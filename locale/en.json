@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "GitHub",
+    "description": "Connect your GitHub account through the official remote GitHub MCP Server to create public or private repositories and upload or delete repository content from the conversation. Tools appear as mcp__github__<tool> and work with any tool-calling model. Requires a fine-grained PAT stored as the GITHUB_MCP_PAT credential (Contents: Read and write, Metadata: Read; add Administration: Read and write to delete whole repositories). Deleting files or repositories cannot be undone, so confirm each deletion before running it.",
+    "detail": "docs/DETAIL.md"
+  }
+}
